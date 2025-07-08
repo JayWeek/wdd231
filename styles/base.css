@@ -34,7 +34,7 @@ body {
     margin-right: 20px;
 }
 /* Add white text color */
-.nav-bar ul.menu-list li .nav-link {
+.nav-bar ul.menu-list li a {
     color: white;
     text-decoration: none;
     padding: 0.5rem 1rem;        
@@ -42,7 +42,7 @@ body {
     transition: background-color 0.3s ease, transform 0.2s ease; 
     border-radius: 6px;
 }
-.nav-bar ul.menu-list li .nav-link:hover {
+.nav-bar ul.menu-list li a:hover {
     background-color: #555;
     transform: scale(1.05);    
 }
@@ -214,7 +214,7 @@ footer {
         display: block;
         border-bottom: 1px solid #444;
     }
-    .nav-bar ul.menu-list li .nav-link {
+    .nav-bar ul.menu-list li a {
         display: block;
         width: 100%;
         padding: 1rem;
@@ -222,7 +222,7 @@ footer {
         color: white;
         text-align: left;
     }
-    .nav-bar ul.menu-list li .nav-link:hover {
+    .nav-bar ul.menu-list li a:hover {
         background-color: #333;
     }
 
