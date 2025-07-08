@@ -46,7 +46,8 @@ body {
     background-color: #555;
     transform: scale(1.05);    
 }
-/* Main */
+
+/* MAIN */
 /* Apply CSS Grid to the top-sections container */
 .top-sections {
     display: grid;
@@ -66,16 +67,16 @@ body {
 }
 
 .about-me-text {
-  font-size: 1rem;           /* Clean, readable text size */
-  line-height: 1.6;          /* Good spacing between lines */
-  color: #333;               /* Soft black for professionalism */
-  max-width: 700px;          /* Keeps lines short and readable */
-  margin: 1rem auto;         /* Centered with breathing room */
-  padding: 1rem;             /* Space inside the paragraph box */
-  background-color: #f9f9f9; /* Subtle background to lift it slightly */
-  border-left: 4px solid #0D3B45; /* Accent color for style */
-  border-radius: 6px;        /* Soft corners */
-  box-shadow: 0 2px 6px rgba(0,0,0,0.05); /* Very light shadow */
+  font-size: 1rem;          
+  line-height: 1.6;          
+  color: #333;               
+  max-width: 700px;         
+  margin: 1rem auto;        
+  padding: 1rem;             
+  background-color: #f9f9f9; 
+  border-left: 4px solid #0D3B45; 
+  border-radius: 6px;       
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05); 
 }
 
 .section-box h2 {
