@@ -1,0 +1,285 @@
+
+.hamburger {
+    display: none;
+}
+.logo-name-container {
+    display: flex;
+    align-items: center; 
+    gap: 0.75rem;         
+}
+.logo-name-container {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;        
+}
+/* Apply the flex display property to the nav bar */
+.nav-bar {
+    display: flex;
+    margin-top: 10px;       
+}
+/* Add a dark background color */
+.nav-bar ul.menu-list {
+    list-style-type: none; /* Remove bullet points */
+    margin: 0;
+    padding: 15px;
+    background-color: #333; /* Dark background color */
+    width: 100%;
+}
+/* Make the menu items inline */
+.nav-bar ul.menu-list li {
+    display: inline-block;
+    margin-right: 20px;
+}
+/* Add white text color */
+.nav-bar ul.menu-list li a {
+    color: white;
+    text-decoration: none;
+    padding: 0.5rem 1rem;        
+    display: inline-block;        
+    transition: background-color 0.3s ease, transform 0.2s ease; 
+    border-radius: 6px;
+}
+.nav-bar ul.menu-list li a:hover {
+    background-color: #555;
+    transform: scale(1.05);    
+}
+/* Main */
+/* Apply CSS Grid to the top-sections container */
+.top-sections {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 25px;
+    margin-bottom: 10px;
+}
+/* Style for About section */
+.About .section-box {
+    background-color: #f0f0f0; 
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+.About .section-box p{
+    margin-left: 135px;
+    margin-right: 10px;
+}
+
+.about-me-text {
+  font-size: 1rem;           /* Clean, readable text size */
+  line-height: 1.6;          /* Good spacing between lines */
+  color: #333;               /* Soft black for professionalism */
+  max-width: 700px;          /* Keeps lines short and readable */
+  margin: 1rem auto;         /* Centered with breathing room */
+  padding: 1rem;             /* Space inside the paragraph box */
+  background-color: #f9f9f9; /* Subtle background to lift it slightly */
+  border-left: 4px solid #0D3B45; /* Accent color for style */
+  border-radius: 6px;        /* Soft corners */
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05); /* Very light shadow */
+}
+
+.section-box h2 {
+    background-color: #111;
+    color: white;
+    padding: 0.75rem 1rem;
+    margin: 0;
+    text-align: center;
+}
+/* Style for Student Photo section */
+.photo .section-box {
+    background-color: #fff; /* White background */
+    text-align: center;
+}
+.photo .section-box img {
+    margin-top: 15px;
+    width: 300px;
+    height: auto;
+    border-radius: 150px;
+}
+/* Courses section */
+.first-3 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+}
+
+.first-3 p {
+    background-color: #f0f0f0;
+    padding: 0.5rem 1rem;
+    text-align: center;
+    border-radius: 6px;
+    font-weight: 500;
+    width: 100%;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+
+.course-grid {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    justify-content: center;
+    gap: 1rem;
+}
+.course-grid p {
+    background-color: #f0f0f0;
+    padding: 0.5rem 1rem;
+    text-align: center;
+    border-radius: 6px;
+    min-width: 463px;
+    font-weight: 500;
+}
+.courses span{
+    font-size: 1rem;
+    font-weight: 500;
+    margin-left: 43%;
+}
+.social-icons {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    gap: 1.5rem;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.social-icons img {
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
+}
+footer {
+    background-color: #222;
+    color: white;
+    padding: 1rem 0;
+    text-align: center;
+}
+.footer-main,
+.footer-sub {
+    margin: 0.5rem auto;
+    max-width: 700px;
+    padding: 0.5rem 1rem;
+    box-sizing: border-box;
+}
+.footer-sub {
+    font-size: 0.875rem;
+    color: #ccc;
+}
+
+@media screen and (max-width: 600px) {
+    .hamburger {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 25px;
+        height: 20px;
+        cursor: pointer;
+        margin-left: auto;
+        padding-right: 15px;
+    }
+    .hamburger span {
+        display: block;
+        height: 3px;
+        width: 100%;
+        background-color: #0D3B45;
+        border-radius: 2px;
+        transition: all 0.3s ease;
+    }
+    .hamburger.active span:nth-child(1) {
+        transform: rotate(45deg) translate(4px, 4px);
+    }
+    .hamburger.active span:nth-child(2) {
+        opacity: 0;
+    }
+    .hamburger.active span:nth-child(3) {
+        transform: rotate(-45deg) translate(4px, -4px);
+    }
+
+    .nav-bar {
+        flex-direction: column;
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.3s ease;
+    }
+    .nav-bar.show {
+        max-height: 300px;
+    }
+
+    .nav-bar ul.menu-list {
+        flex-direction: column;
+        padding: 0;
+        background-color: #222;
+    }
+    .nav-bar ul.menu-list li {
+        display: block;
+        border-bottom: 1px solid #444;
+    }
+    .nav-bar ul.menu-list li a {
+        display: block;
+        width: 100%;
+        padding: 1rem;
+        background-color: #222;
+        color: white;
+        text-align: left;
+    }
+    .nav-bar ul.menu-list li a:hover {
+        background-color: #333;
+    }
+
+    .logo-name-container {
+        gap: 0.5rem;
+    }
+
+    .top-sections {
+        display: block;
+    }
+
+    .About .section-box p{
+        margin-left: 5px;
+        margin-right: 10px;
+    }
+
+    .photo .section-box img {
+        width: 150px;
+        border-radius: 50%;
+    }
+
+    .course-grid {
+        line-height: 1.2;
+        grid-template-columns: 1fr;
+        
+    }
+    
+    .first-3 p,
+    .course-grid p {
+        min-width: unset;
+        width: 100%;
+    }
+
+    .courses span {
+        margin-left: 0;
+        display: block;
+        text-align: center;
+    }
+
+    .social-icons {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 1rem;
+    }
+
+    footer {
+        padding: 1rem 0;
+    }
+    .footer-main,
+    .footer-sub {
+        padding: 0.5rem;
+        text-align: center;
+    }
+
+    html, body {
+        max-width: 100%;
+        overflow-x: hidden;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+}
