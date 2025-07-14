@@ -165,13 +165,13 @@ section a:hover {
 	grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
 	grid-gap: 5px;
 	align-items: center;
+}
+.grid-view section {
+	text-align: center;
+}
 
-	section {
-		text-align: center;
-		& > * {
-			margin: 0.1rem;
-		}
-	}
+.grid-view section > * {
+	margin: 0.1rem;
 }
 
 /* List view */
