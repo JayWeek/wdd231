@@ -32,7 +32,11 @@ header {
 .logo {
   display: flex;
   align-items: center;
-  gap: 0.5rem; /* space between image and text */
+  gap: 0.1	rem; /* space between image and text */
+}
+
+.logo span{
+	margin-left: -20px;
 }
 
 .site-name {
