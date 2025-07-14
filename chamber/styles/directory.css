@@ -37,7 +37,7 @@ header {
 .logo {
   display: flex;
   align-items: center;
-  gap: 0.1	rem; /* space between image and text */
+  gap: 0.5rem; 
 }
 
 .logo span{
