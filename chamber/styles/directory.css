@@ -175,37 +175,38 @@ section a:hover {
 }
 
 /* List view */
-.list-view{
+.list-view {
 	display: flex;
 	flex-direction: column;
-
-	section {
-		display: grid;
-		grid-template-columns: 3fr 6fr 6fr 2fr 2fr 4fr;
-		margin: 0 auto;
-		padding: 0.25rem;
-
-		& > * {
-			margin: 0 1rem;
-		}
-
-		img {
-			display: none;
-		}
-
-		h3 {
-			font-size: 1rem;
-		}
-
-		&:nth-child(even) {
-			background-color: #f0f0f0;
-		}
-		
-		&:nth-child(odd) {
-			background-color: #ffffff; /* white base */
-		}
-	}	
 }
+
+.list-view section {
+	display: grid;
+	grid-template-columns: 3fr 6fr 6fr 2fr 2fr 4fr;
+	margin: 0 auto;
+	padding: 0.25rem;
+}
+
+.list-view section > * {
+	margin: 0 1rem;
+}
+
+.list-view section img {
+	display: none;
+}
+
+.list-view section h3 {
+	font-size: 1rem;
+}
+
+.list-view section:nth-child(even) {
+	background-color: #f0f0f0;
+}
+
+.list-view section:nth-child(odd) {
+	background-color: #ffffff; /* white base */
+}
+
 
 footer {
     background-color: #222;
@@ -269,19 +270,21 @@ footer {
 	transform: rotate(-45deg) translate(5px, -5px);
 	}
 
-	.list-view{
-		section {
-			display: grid;
-			grid-template-columns: 1fr 1fr;
-			margin: 0 auto;
-		}	
-		section p , a{
-			font-size: 0.7rem;
-		}
-		section h3{
-			font-size: 1rem;
-		}
+	.list-view section {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		margin: 0 auto;
 	}
+
+	.list-view section p,
+	.list-view section a {
+		font-size: 0.7rem;
+	}
+
+	.list-view section h3 {
+		font-size: 1rem;
+	}
+
 	.footer-main,
     .footer-sub {
         max-width: 100%;     
