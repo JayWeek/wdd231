@@ -1,0 +1,28 @@
+{
+    "family_name" : "Tang",
+    "move_in_date" : "2019-10-1",
+    "number_of_people" : 4,
+    "visted_by_bishopric" : true,
+    "individual_family_member_data":[
+        {
+            "name" : "Tang Gerald",
+            "gender": "male",
+            "birthdate": "2006-29-01"
+        },
+        {
+            "name":"Priscilla Badjoko",
+            "gender":"female",
+            "birthdate" : "2002-26-12"
+        },
+        {
+            "name":"Tang Philomen",
+            "gender":"female",
+            "birthdate" : "2008-16-02"
+        },
+        {
+            "name":"Saile Badjoko",
+            "gender":"female",
+            "birthdate" : "1975-17-02"
+        }
+    ]
+}

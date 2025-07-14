@@ -1,0 +1,86 @@
+{
+  "companies": [
+    {
+      "name": "Amazon",
+      "address": "410 Terry Ave N, Seattle, WA 98109, USA",
+      "phone": "+1 206-266-1000",
+      "url": "https://www.amazon.com",
+      "image": "https://logo.clearbit.com/amazon.com",
+      "level": 3,
+      "category": "E-commerce"
+    },
+    {
+      "name": "Google",
+      "address": "1600 Amphitheatre Parkway, Mountain View, CA 94043, USA",
+      "phone": "+1 650-253-0000",
+      "url": "https://www.google.com",
+      "image": "https://logo.clearbit.com/google.com",
+      "level": 3,
+      "category": "Technology"
+    },
+    {
+      "name": "Tesla",
+      "address": "3500 Deer Creek Road, Palo Alto, CA 94304, USA",
+      "phone": "+1 650-681-5000",
+      "url": "https://www.tesla.com",
+      "image": "https://logo.clearbit.com/tesla.com",
+      "level": 2,
+      "category": "Automotive"
+    },
+    {
+      "name": "Starbucks",
+      "address": "2401 Utah Ave S, Seattle, WA 98134, USA",
+      "phone": "+1 800-782-7282",
+      "url": "https://www.starbucks.com",
+      "image": "https://logo.clearbit.com/starbucks.com",
+      "level": 1,
+      "category": "Food & Beverage"
+    },
+    {
+      "name": "Facebook (Meta)",
+      "address": "1 Hacker Way, Menlo Park, CA 94025, USA",
+      "phone": "+1 650-308-7300",
+      "url": "https://www.meta.com",
+      "image": "https://logo.clearbit.com/meta.com",
+      "level": 2,
+      "category": "Social Media"
+    },
+    {
+      "name": "Microsoft",
+      "address": "One Microsoft Way, Redmond, WA 98052, USA",
+      "phone": "+1 425-882-8080",
+      "url": "https://www.microsoft.com",
+      "image": "https://logo.clearbit.com/microsoft.com",
+      "level": 3,
+      "category": "Software"
+    },
+    {
+      "name": "Netflix",
+      "address": "100 Winchester Cir, Los Gatos, CA 95032, USA",
+      "phone": "+1 408-540-3700",
+      "url": "https://www.netflix.com",
+      "image": "https://logo.clearbit.com/netflix.com",
+      "level": 1,
+      "category": "Entertainment"
+    },
+    {
+      "name": "Adobe",
+      "address": "345 Park Avenue, San Jose, CA 95110, USA",
+      "phone": "+1 408-536-6000",
+      "url": "https://www.adobe.com",
+      "image": "https://logo.clearbit.com/adobe.com",
+      "level": 2,
+      "category": "Design & Software"
+    },
+    {
+        "name": "Safaricom",
+        "address": "Safaricom House, Waiyaki Way, Nairobi, Kenya",
+        "phone": "+254 722 002100",
+        "url": "https://www.safaricom.co.ke",
+        "image": "https://logo.clearbit.com/safaricom.co.ke",
+        "level": 2,
+        "category": "Telecommunications"
+    }
+
+  ]
+}

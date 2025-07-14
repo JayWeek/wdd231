@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Chamber of commerce. A place for all businesses.">
+        <meta name="author" content="Tang Gerald">
+        <title>OP chamber of Commerce | Connect, Grow, Succeed</title>
+
+        <!-- Social media meta tags -->
+        <meta property="og:title" content="OP Chamber of Commerce">
+        <meta property="og:description" content="Connecting businesses and fostering economic growth in Your City. Join us to network, learn, and grow together.">
+        <meta property="og:image" content="https://www.yourchamberwebsite.com/images/chamber-logo.jpg">
+        <meta property="og:url" content="https://www.yourchamberwebsite.com">
+        <meta property="og:type" content="website">
+
+        <!-- Links -->
+        <link rel="stylesheet" href="styles/normalise.css">
+        <link rel="stylesheet" href="styles/directory.css">
+        <script src="scripts/directory.js" defer></script>
+    </head>
+    <body>
+        <header>
+        <div class="container">
+            <div class="logo">
+                <img src="images/OP-COC.svg" alt="OP-COC icon" width="110" height="109">
+                <span class="site-name">OP-COC</span>
+            </div>
+            
+
+            <button class="hamburger" id="menu-toggle" aria-label="Toggle menu">
+            <span></span>
+            <span></span>
+            <span></span>
+            </button>
+
+            <nav id="nav">
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="discover.html">Discover</a></li>
+                <li><a href="#">Business Directory</a></li>
+                <li><a href="join.html">Join</a></li>
+            </ul>
+            </nav>
+        </div>
+        </header>
+
+        <main>
+            <div class="view-menu">
+                <button id="gridViewBtn">Grid View</button>
+                <button id="listViewBtn">List View</button>
+            </div>
+
+            <div id="memberContainer" class="grid-view">
+                <!-- Member items will be inserted here -->
+            </div>
+
+        </main>
+
+        <footer>
+            <p class="footer-main">
+            &copy; <span id="currentyear"></span> &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp; TANG GERALD &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp; UGANDA
+            </p>
+            <p class="footer-sub" id="last-Modified"></p>
+        </footer>
+    </body>
+</html>
