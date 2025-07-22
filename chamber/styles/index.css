@@ -86,10 +86,6 @@ nav a.active {
 
 
 /* ************ MAIN ************ */
-/* main{
-  max-width: 1500px;
-  margin: 0 auto;
-} */
 
 /* hero-section */
 .hero-section {
@@ -123,8 +119,6 @@ nav a.active {
 .cta-btn:hover {
   background-color: #005fa3;
 }
-
-
 
 
 /* weather-section */
@@ -192,8 +186,8 @@ nav a.active {
 
 .temp {
   font-weight: bold;
-  font-size: 1.2em; /* or adjust as needed */
-  color: #222; /* optional: makes it more readable */
+  font-size: 1.2em;
+  color: #222;
 }
 
 
