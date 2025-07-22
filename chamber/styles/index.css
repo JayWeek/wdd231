@@ -104,6 +104,7 @@ nav a.active {
 
 .cta-btn {
   position: absolute;
+  text-decoration: none;
   bottom: 2rem;
   right: 2rem;
   padding: 1rem 2rem;
