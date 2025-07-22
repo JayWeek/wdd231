@@ -3,9 +3,9 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="description" content="Chamber of commerce. A place for all businesses.">
+        <meta name="description" content="OP Chamber of Commerce connects local businesses in Uganda. Discover networking events, business directories, and resources to help your company grow.">
         <meta name="author" content="Tang Gerald">
-        <title>OP chamber of Commerce | Connect, Grow, Succeed</title>
+        <title>Chamber of Commerce in Uganda | OP Chamber | Connect, Grow, Succeed</title>
 
         <!-- Social media meta tags -->
         <meta property="og:title" content="OP Chamber of Commerce">
@@ -16,8 +16,8 @@
 
         <!-- Links -->
         <link rel="stylesheet" href="styles/normalise.css"> 
-        <link rel="stylesheet" href="styles/directory.css">
-        <script type="module" src="scripts/directory.js"></script>
+        <link rel="stylesheet" href="styles/index.css">
+        <script type="module" src="scripts/index.js"></script>
         <link rel="icon" href="images/favicon.ico">
 
         <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -32,18 +32,17 @@
                 <span class="site-name">OP-COC</span>
             </div>
             
-
             <button class="hamburger" id="menu-toggle" aria-label="Toggle menu">
             <span></span>
             <span></span>
             <span></span>
             </button>
 
-            <nav id="nav">
+            <nav id="nav" role="navigation">
             <ul>
-                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html" class="active">Home</a></li>
                 <li><a href="discover.html">Discover</a></li>
-                <li><a href="#" class="active">Business Directory</a></li>
+                <li><a href="directory.html">Business Directory</a></li>
                 <li><a href="join.html">Join</a></li>
             </ul>
             </nav>
@@ -51,17 +50,50 @@
         </header>
 
         <main>
-            <h1>Our Business Members</h1>
-            <div class="view-menu">
-                <button id="gridViewBtn">Grid View</button>
-                <button id="listViewBtn">List View</button>
-            </div>
+            <section class="hero-section">
+                <img 
+                    src="images/hero-large.jpg" 
+                    srcset="
+                    images/hero-small.webp 600w,
+                    images/hero-medium.webp 1024w,
+                    images/hero-large.webp 1600w
+                    "
+                    sizes="100vw"
+                    alt="Local businesses and city" 
+                    class="hero-img"
+                    loading="eager"
+                >
 
-            <div id="memberContainer" class="grid-view loading">
-            <div class="placeholder-card"></div>
-            <div class="placeholder-card"></div>
-            <div class="placeholder-card"></div>
-            </div>
+                <a href="join.html">
+                    <button class="cta-btn">Join Us</button>
+                </a>
+
+            </section>
+
+            <section class="weather-container">
+                <h1> Home</h1>
+                <div class="events-weather">
+                    <div id="events">
+                        <h2>Events</h2>
+                        <p>Chamber Breakfast - Friday 9AM</p>
+                        <p>Chamber Breakfast - Friday 9AM</p>
+                        <p>Chamber Breakfast - Friday 9AM</p>
+                        <p>Chamber Breakfast - Friday 9AM</p>
+
+                    </div>
+                    <div id="currentWeather">
+                        <div class="currentWeatherInner">
+                            
+                        </div>
+                    </div>
+
+                    <div id="forecast"></div>
+                </div>
+            </section>
+
+            <section class="business-showcase">
+                
+            </section>
 
 
         </main>

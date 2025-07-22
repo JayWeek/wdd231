@@ -69,6 +69,10 @@ nav a:hover {
   color: #00BFA6;
 }
 
+nav a.active {
+  border-bottom: 2px solid #0077cc;
+}
+
 /* Hamburger button */
 .hamburger {
   display: none;
@@ -164,7 +168,7 @@ section a:hover {
 	display: grid;
 	grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
 	grid-gap: 5px;
-	align-items: center;
+	align-items: center;  
 }
 .grid-view section {
 	text-align: center;

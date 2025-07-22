@@ -1,46 +1,15 @@
+import setupNavigation from "./nav.mjs";
+import { setCurrentYear, setLastModified } from "./date.mjs";
+
+setupNavigation();
+setCurrentYear();
+setLastModified();
+
+
 const memberContainer = document.querySelector('#memberContainer');
 const url = 'data/members.json';
 const gridbutton = document.querySelector("#gridViewBtn");
 const listbutton = document.querySelector("#listViewBtn");
-
-
-// NAVIGATION
-const toggleBtn = document.getElementById('menu-toggle');
-const nav = document.getElementById('nav');
-
-toggleBtn.addEventListener('click', () => {
-toggleBtn.classList.toggle('open');
-nav.classList.toggle('open')});
-
-// DATE
-const currentYearEl = document.querySelector("#currentyear");
-const lastModifiedEl = document.querySelector("#last-Modified");
-
-// Set current year
-if (currentYearEl) {
-  const today = new Date();
-  currentYearEl.textContent = today.getFullYear();
-}
-
-// Set last modified date in MM/DD/YYYY/ HH:mm:ss format
-if (lastModifiedEl) {
-  const lastmod = new Date(document.lastModified);
-
-  const twoDigits = (num) => String(num).padStart(2, '0');
-
-  const formattedDate = 
-    `${twoDigits(lastmod.getMonth() + 1)}/` +
-    `${twoDigits(lastmod.getDate())}/` +
-    `${lastmod.getFullYear()}/ ` +
-    `${twoDigits(lastmod.getHours())}:` +
-    `${twoDigits(lastmod.getMinutes())}:` +
-    `${twoDigits(lastmod.getSeconds())}`;
-
-  lastModifiedEl.textContent = `Last modification: ${formattedDate}`;
-}
-
-
-
 
 
 // Adding event listeners
@@ -111,7 +80,5 @@ const displayCompanies = (companies) => {
     });
 };
 
-
 // Run the fetch
 getCompanyData();
-
