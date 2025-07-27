@@ -1,0 +1,370 @@
+header {
+  background-color: #222;
+  color: #f2f2f2;
+  padding: 2rem 0;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.3);
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem; 
+}
+
+.logo span{
+	margin-left: -5px;
+}
+
+.site-name {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #f2f2f2; /* adjust as needed */
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Navigation */
+nav ul {
+  display: flex;
+  list-style: none;
+  gap: 1.5rem;
+}
+
+nav a {
+  color: #f2f2f2;
+  text-decoration: none;
+  font-weight: bold;
+  position: relative;
+}
+
+nav a:hover {
+  color: #00BFA6;
+}
+
+nav a.active {
+  border-bottom: 2px solid #0077cc;
+}
+
+/* Hamburger button */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  z-index: 10;
+}
+
+.hamburger span {
+  width: 25px;
+  height: 3px;
+  background-color: #f2f2f2;
+  transition: all 0.3s ease;
+}
+
+main {
+	margin: 0 auto;
+	padding: 0.5rem;
+	max-width: 1100px;
+	background-color: #fff;
+	font-family: Acme, Arial, sans-serif;
+}
+
+
+
+
+.join-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: .9rem;
+  align-items: start;
+  max-width: 1200px;
+}
+
+/* Ensure the form stays compact and fits in one column */
+.membershipForm {
+  width: 100%;
+  max-width: 500px;
+  justify-self: start;
+}
+
+.membershipForm {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  padding: 2rem;
+  background-color: #ffffff;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  width: 100%;
+  max-width: 500px;
+}
+
+.membershipForm label {
+  display: flex;
+  flex-direction: column;
+  font-weight: 600;
+  font-size: 0.95rem;
+  color: #333333;
+}
+
+.membershipForm input[type="text"],
+.membershipForm input[type="email"],
+.membershipForm input[type="tel"],
+.membershipForm input[type="hidden"],
+.membershipForm textarea {
+  margin-top: 0.5rem;
+  padding: 0.75rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 0.95rem;
+  font-family: inherit;
+  background-color: #f9f9f9;
+  transition: border-color 0.3s;
+}
+
+.membershipForm input:focus,
+.membershipForm textarea:focus {
+  border-color: #007bff;
+  outline: none;
+  background-color: #fff;
+}
+
+.membershipForm fieldset {
+  border: none;
+  padding: 0;
+  display: flex;
+  
+  gap: 0.5rem;
+}
+
+.membershipForm legend {
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  font-size: 0.95rem;
+  color: #333;
+}
+
+.membershipForm fieldset label {
+  font-weight: 400;
+  font-size: 0.9rem;
+  display: flex;
+  
+  gap: 0.5rem;
+}
+
+.membershipForm textarea {
+  resize: vertical;
+}
+
+.membershipForm input[type="submit"] {
+  background-color: #0056b3;
+  color: #ffffff;
+  padding: 0.8rem 1.2rem;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.membershipForm input[type="submit"]:hover {
+  background-color: #0056b3;
+}
+
+/* Style the membership cards section to align to the right on large screens */
+.membership-cards {
+  display: grid;
+  gap: 1.5rem;
+  justify-self: stretch;
+}
+
+.membership-heading{
+  top: 8px;
+  margin-bottom: 35px;
+  position: relative;
+}
+
+/* .membership-cards {
+  display: grid;
+  gap: 1rem;
+  margin-top: 2rem;
+} */
+
+.card {
+  padding: 1rem;
+  border: 2px solid #ccc;
+  border-radius: 10px;
+  background: #f9f9f9;
+  text-align: center;
+  width: 40%;
+}
+
+.learn-more-btn {
+  margin-top: 1rem;
+  padding: 0.5rem 1rem;
+  font-weight: bold;
+}
+
+dialog::backdrop {
+  background: rgba(0, 0, 0, 0.5);
+}
+
+dialog div{
+    display: grid;
+    grid-template-columns: auto 44px;
+}
+
+
+
+/* FOOTER SECTION */
+footer {
+    background-color: #222;
+    color: white;
+    padding: 1rem 0;
+    text-align: center;
+    min-height: 120px;
+}
+.footer-main,
+.footer-sub {
+    margin: 0.5rem auto;
+    max-width: 700px;
+    padding: 0.5rem 1rem;
+    box-sizing: border-box;
+    min-height: 1.5rem;
+}
+.footer-sub {
+    font-size: 0.875rem;
+    color: #ccc;
+}
+
+
+
+/* Smaller screens */
+@media (max-width: 600px) {
+  .hamburger {
+    display: flex;
+  }
+  
+  .site-name {
+		font-size: 1rem;
+	}
+
+  nav {
+    position: absolute;
+    top: 100px;
+    right: 0;
+    background-color: #333;
+    width: 100%;
+    display: none;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  nav.open {
+    display: flex;
+  }
+
+  nav ul {
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1rem 0;
+  }
+
+	/* Hamburger toggle to X */
+	.hamburger.open span:nth-child(1) {
+	transform: rotate(45deg) translate(5px, 5px);
+	}
+
+	.hamburger.open span:nth-child(2) {
+	opacity: 0;
+	}
+
+	.hamburger.open span:nth-child(3) {
+	transform: rotate(-45deg) translate(5px, -5px);
+	}
+
+  .join-container {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  h1{
+    font-size: 1.5rem;
+  }
+
+  .membershipForm {
+    padding: 1rem;
+    max-width: 100%;
+    gap: 1rem;
+  }
+
+  .membershipForm label {
+    font-size: 0.9rem;
+  }
+
+  .membershipForm input[type="text"],
+  .membershipForm input[type="email"],
+  .membershipForm input[type="tel"],
+  .membershipForm textarea {
+    font-size: 0.7rem;
+    padding: 0.4rem;
+  }
+
+  .membershipForm input[type="submit"] {
+    font-size: 0.95rem;
+    padding: 0.7rem 1rem;
+  }
+
+  .membershipForm legend {
+    font-size: 0.9rem;
+  }
+
+  .membership-heading {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+  }
+
+  .membership-cards {
+    grid-template-columns: 1fr;
+  }
+
+  .card {
+    width: 100%;
+  }
+}
+
+/* General fix for horizontal scroll */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+/* Make sure container does not exceed screen width */
+.join-container {
+  width: 100%;
+  overflow-x: hidden;
+}
+
+.membershipForm,
+.membership-cards,
+.card {
+  max-width: 100%;
+}
+

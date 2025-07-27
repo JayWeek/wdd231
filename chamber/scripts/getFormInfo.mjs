@@ -1,0 +1,1 @@
+const getFormInfo = new URLSearchParams(window.location.search);

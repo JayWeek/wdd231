@@ -167,8 +167,54 @@ function displayCourses(courseArray){
     
     courseGrid.appendChild(p);
     creditInformation.textContent = `The total credits listed above is ${total}`;
+
+    p.addEventListener("click", () => popupCourse(course));
+
   })
 }
 
 // displaying courses at render
 displayCourses(courses);
+
+const mydialog = document.querySelector("#course-details");
+const myTitle = document.querySelector("#course-details h2");
+const closeButton = document.querySelector("#closeButton");
+const showHere = document.querySelector("#showHere");
+
+
+// Event listener to close dialog
+closeButton.addEventListener("click", () =>{
+  mydialog.close();
+})
+
+// function to display dialog
+function popupCourse(course) {
+  myTitle.innerHTML = `${course.subject} ${course.number}`;
+
+  const contentBox = document.getElementById("course-content");
+  contentBox.innerHTML = ''; // 🔥 Clear previous content
+
+  const subTitle = document.createElement('p');
+  subTitle.innerHTML = `${course.title}`;
+
+  const creditInfo = document.createElement("p");
+  creditInfo.innerHTML = `${course.credits} credits`;
+
+  const certificate = document.createElement("p");
+  certificate.innerHTML = `Certificate: ${course.certificate}`;
+
+  const description = document.createElement("p");
+  description.innerHTML = `${course.description}`;
+
+  const technology = document.createElement("p");
+  technology.innerHTML = `Technology: ${course.technology}`;
+
+  // Add them inside the course-content div
+  contentBox.appendChild(subTitle);
+  contentBox.appendChild(creditInfo);
+  contentBox.appendChild(certificate);
+  contentBox.appendChild(description);
+  contentBox.appendChild(technology);
+
+  mydialog.showModal(); // ✅ Correct method to show a modal
+}
