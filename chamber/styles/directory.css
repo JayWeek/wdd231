@@ -293,6 +293,10 @@ footer {
 	transform: rotate(-45deg) translate(5px, -5px);
 	}
 
+  section {
+    width: 350px;
+  }
+
 	.list-view section {
 		display: grid;
 		grid-template-columns: 1fr 1fr;

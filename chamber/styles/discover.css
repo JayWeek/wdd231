@@ -1,0 +1,370 @@
+/* Color palette */
+:root {
+  --primary-dark: #222222;
+  --primary-light: #f2f2f2;
+  --background: #ffffff;
+  --accent-blue: #3182ce;           
+  --accent-blue-hover: #276ba7;     
+  --accent-teal: #00796B;          
+  --section-gray: #f0f0f0;
+  --text-main: #333333;
+  --text-muted: #999999;
+}
+
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', Arial, sans-serif;
+}
+
+/* HEADER */
+/* Base styles */
+header {
+  background-color: #222;
+  color: #f2f2f2;
+  padding: 2rem 0;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.3);
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem; 
+}
+
+.logo span{
+	margin-left: -5px;
+}
+
+.site-name {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #f2f2f2; /* adjust as needed */
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Navigation */
+nav ul {
+  display: flex;
+  list-style: none;
+  gap: 1.5rem;
+}
+
+nav a {
+  color: #f2f2f2;
+  text-decoration: none;
+  font-weight: bold;
+  position: relative;
+}
+
+nav a:hover {
+  color: #00BFA6;
+}
+
+nav a.active {
+  border-bottom: 2px solid #0077cc;
+}
+
+
+/* Hamburger button */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  z-index: 10;
+}
+
+.hamburger span {
+  width: 25px;
+  height: 3px;
+  background-color: #f2f2f2;
+  transition: all 0.3s ease;
+}
+
+
+
+/******** STYLE FOR PAGE MAIN CONTENTS ********/
+
+main {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.card-section {
+  padding: 2rem;
+  display: grid;
+  gap: 2rem;
+}
+
+.page-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  text-align: center;
+  color: var(--primary-dark);
+  margin: 2rem auto 1.5rem auto;
+  max-width: 800px;
+  line-height: 1.3;
+  padding: 0 1rem;
+}
+
+
+/* Card Styling */
+.card {
+  background-color: var(--primary-light);
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  transition: transform 0.2s ease;
+  display: grid;
+  grid-template-areas: 
+    "title"
+    "photograph"
+    "address"
+    "description"
+    "button";
+  height: 100%;
+}
+
+.card h2 {
+  background-color: var(--primary-dark);
+  color: white;
+  padding: 1rem;
+  font-size: 1.2rem;
+  text-align: center;
+  grid-area: title;
+}
+
+.card figure {
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+  grid-area: photograph;
+}
+
+.card figure img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.card address{
+    padding: 1rem;
+  font-size: 0.95rem;
+  grid-area: address;
+  color: var(--text-main);
+}
+.card p {
+  padding: 1rem;
+  font-size: 0.95rem;
+  grid-area: description;
+  color: var(--text-main);
+}
+
+.card button {
+  background-color: var(--accent-teal);
+  color: #fff;
+  border: none;
+  padding: 0.8rem;
+  margin: 1rem;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+  grid-area: button;
+}
+
+.card button:hover {
+  background-color: var(--accent-blue-hover);
+}
+
+/* Visit */
+
+/* Wrapper handles the fade animation */
+#visitMessageWrapper {
+  opacity: 1;
+  transition: opacity 0.5s ease-in-out;
+  position: fixed;
+  top: 1rem;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1000;
+  pointer-events: none; /* Prevent hover/click during fade */
+}
+
+/* When fading out, only the wrapper fades */
+#visitMessageWrapper.fade-out {
+  opacity: 0;
+  display: none;
+}
+
+/* Actual message box — stays fully opaque */
+#visitMessage {
+  background-color: #000; /* High contrast black */
+  color: #fff;            /* White text */
+  padding: 0.75rem 1.5rem;
+  border-radius: 8px;
+  font-size: 1rem;
+  line-height: 1.5;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  max-width: 90vw;
+  text-align: center;
+  pointer-events: auto; /* Needed if you want the message itself clickable */
+}
+
+
+
+
+
+/* ****** FOOTER ****** */
+footer {
+    background-color: #222;
+    color: white;
+    padding: 1rem 0;
+    text-align: center;
+    min-height: 120px;
+}
+.footer-main,
+.footer-sub {
+    margin: 0.5rem auto;
+    max-width: 700px;
+    padding: 0.5rem 1rem;
+    box-sizing: border-box;
+    min-height: 1.5rem;
+}
+.footer-sub {
+    font-size: 0.875rem;
+    color: #ccc;
+}
+
+
+/* Media query for setting grid layout on large screens */
+@media only screen and (min-width: 38rem){
+    .card-section {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .card:hover {
+        transform: translateY(-4px);
+    }
+
+    .card figure img {
+        transition: transform 0.4s ease, filter 0.4s ease;
+    }
+
+    .card figure:hover img {
+        transform: scale(1.05);
+        filter: brightness(1.1);
+    }
+}
+
+/* Media query for setting grid layout on medium screens */
+
+@media only screen and (min-width: 30rem) {
+    .page-title{
+        font-size: 1.6rem;
+    }
+    .card {
+        grid-template-areas: 
+            "photograph title"
+            "photograph address"
+            "photograph description"
+            "photograph button"; 
+    }
+    .card figure{
+        width: 220px;
+    }
+}
+
+
+/* Media query for small screens */
+@media only screen and (max-width: 30rem) {
+    .page-title{
+        font-size: 1.29rem;
+    }
+    .card-section {
+        grid-template-columns: 1fr;
+    }
+    .card {
+        grid-template-areas: 
+        "title"
+        "photograph"
+        "address"
+        "description"
+        "button";
+    }
+}
+
+/* hamburger menu for small and medium devices */
+
+@media only screen and (max-width: 38rem) {
+    .hamburger {
+        display: flex;
+    }
+  
+    .site-name {
+        font-size: 1rem;
+	}
+
+    nav {
+        position: absolute;
+        top: 100px;
+        right: 0;
+        background-color: #333;
+        width: 100%;
+        display: none;
+        flex-direction: column;
+        text-align: center;
+        z-index: 100;
+     }
+
+    nav.open {
+      display: flex;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 1rem;
+        padding: 1rem 0;
+    }
+
+	/* Hamburger toggle to X */
+	.hamburger.open span:nth-child(1) {
+	    transform: rotate(45deg) translate(5px, 5px);
+	}
+
+	.hamburger.open span:nth-child(2) {
+	    opacity: 0;
+	}
+
+	.hamburger.open span:nth-child(3) {
+	    transform: rotate(-45deg) translate(5px, -5px);
+	}
+
+	.footer-main,
+    .footer-sub {
+        max-width: 100%;     
+        padding: 1rem 1.5rem; 
+        font-size: 0.9rem; 
+    }
+
+    #visitMessage{
+        font-size: .6   rem;
+        left: 55%;
+    }
+}

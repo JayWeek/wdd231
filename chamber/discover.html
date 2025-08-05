@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="OP Chamber of Commerce connects local businesses in Uganda. Discover networking events, business directories, and resources to help your company grow.">
+        <meta name="author" content="Tang Gerald">
+        <title>Chamber of Commerce in Uganda | OP Chamber | Connect, Grow, Succeed</title>
+
+        <!-- Social media meta tags -->
+        <meta property="og:title" content="OP Chamber of Commerce">
+        <meta property="og:description" content="Connecting businesses and fostering economic growth in Your City. Join us to network, learn, and grow together.">
+        <meta property="og:image" content="https://jayweek.github.io/wdd231/chamber/images/OP-COC.png">
+        <meta property="og:url" content="https://jayweek.github.io/wdd231/chamber/directory.html">
+        <meta property="og:type" content="website">
+
+        <!-- Links -->
+        <link rel="stylesheet" href="styles/normalise.css"> 
+        <link rel="stylesheet" href="styles/discover.css">
+        <script type="module" src="scripts/discover.js"></script>
+        <link rel="icon" href="images/favicon.ico">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+        <div class="container">
+            <div class="logo">
+                <img src="images/bird_2.svg" alt="op-coc company icon" width="60" height="59">
+                <span class="site-name">OP-COC</span>
+            </div>
+            
+            <button class="hamburger" id="menu-toggle" aria-label="Toggle menu">
+            <span></span>
+            <span></span>
+            <span></span>
+            </button>
+
+            <nav id="nav" role="navigation">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="discover.html" class="active">Discover</a></li>
+                <li><a href="directory.html">Business Directory</a></li>
+                <li><a href="join.html">Join</a></li>
+            </ul>
+            </nav>
+        </div>
+        </header>
+
+        <main>
+            <h1 class="page-title">Discover Hidden Gems in Africa</h1>
+
+            <!-- Visit message will appear here -->
+            <section id="visitMessageWrapper">
+                <div id="visitMessage" class="visitor-message">Welcome, first time visitor!</div>
+            </section>
+
+
+
+            <section class="card-section" id="cardSection">
+                <!-- Cards will be injected here by JS -->
+            </section>
+        </main>
+
+        <footer>
+            <p class="footer-main">
+            &copy; <span id="currentyear"></span> &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp; TANG GERALD &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp; UGANDA
+            </p>
+            <p class="footer-sub" id="last-Modified"></p>
+        </footer>
+    </body>
+</html>

@@ -1,0 +1,50 @@
+[
+    {
+        "title": "Speke Resort & Conference Centre",
+        "image": "images/Speke-Resort-Munyonyo.webp",
+        "address": "Plot 94, 411 & 412, Wavamunno Road, Munyonyo, Kampala, Uganda",
+        "description": "A luxurious lakeside resort on Lake Victoria with 335 rooms, restaurants, an Olympic-size pool, marina, equestrian centre, and spa. Hosts major international events."
+    },
+    {
+        "title": "Wonder World Amusement Park",
+        "image":"images/wonder_world.webp",
+        "address": "Ggaba Road, Kansanga, Kampala, Uganda",
+        "description": "A vibrant amusement park with roller coasters, a pirate ship, water slides, and a mini train. A top family destination in Kampala."
+    },
+    {
+        "title": "Cafe Javas",
+        "image": "images/cafejavas.webp",
+        "address": "Multiple locations, Kampala, Uganda",
+        "description": "A popular Ugandan caf\u00e9 chain known for great food, consistent service, and a modern caf\u00e9 experience. A go-to for breakfast, lunch, and meetings."
+    },
+    {
+        "title": "Skyz Hotel Naguru by Protea",
+        "image": "images/skyz-hotel.webp",
+        "address": "Plot 1, Water Lane, Naguru Hill, Kampala, Uganda",
+        "description": "An upscale hotel with city views, rooftop bar, event facilities, and a luxurious environment perfect for business or leisure."
+    },
+    {
+        "title": "Giraffe Manor",
+        "image": "images/Giraffe-Manor.webp",
+        "address": "Gogo Falls Road, Langata, Nairobi, Kenya",
+        "description": "A unique boutique hotel where giraffes roam the property and interact with guests during breakfast. Set on historic grounds with only 10 rooms."
+    },
+    {
+        "title": "Two Rivers Mall & Theme Park",
+        "image": "images/Two-Rivers.webp",
+        "address": "Limuru Road & Northern Bypass, Ruaka, Nairobi, Kenya",
+        "description": "East Africa\u2019s largest shopping mall with an adjacent theme park, offering family rides, dining, and major retail outlets."
+    },
+    {
+        "title": "Carnivore Restaurant",
+        "image": "images/carnivore-restaurant.webp",
+        "address": "Langata Road, Nairobi, Kenya",
+        "description": "Iconic all-you-can-eat meat restaurant offering a wide variety of game and local meats in a lively setting."
+    },
+    {
+        "title": "Sarova Whitesands Beach Resort & Spa",
+        "image": "images/Sarova-whitesands.webp",
+        "address": "Malindi Road, Bamburi Beach, Mombasa, Kenya",
+        "description": "A luxury beachfront resort offering spa treatments, water sports, and family-friendly hospitality on Kenya\u2019s Indian Ocean coast."
+    }
+]
