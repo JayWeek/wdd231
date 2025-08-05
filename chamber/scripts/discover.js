@@ -34,19 +34,21 @@ getPlaceData();
 function displayCards(places) {
     const section = document.getElementById("cardSection");
 
-    places.forEach(place => {
+    places.forEach((place, index) => {
         const card = document.createElement('div');
         card.className = 'card';
 
+        const loadingAttr = index < 4 ? '' : 'loading="lazy"';
+
         card.innerHTML = `
-        <h2>${place.title}</h2>
-        <figure>
-          <img src="${place.image}" alt="${place.title}">
-        </figure>
-        <address>${place.address}</address>
-        <p>${place.description}</p>
-        <button>Learn More</button>
-      `;
+            <h2>${place.title}</h2>
+            <figure>
+                <img src="${place.image}" alt="${place.title}" ${loadingAttr}>
+            </figure>
+            <address>${place.address}</address>
+            <p>${place.description}</p>
+            <button>Learn More</button>
+        `;
 
         section.appendChild(card);
     });
