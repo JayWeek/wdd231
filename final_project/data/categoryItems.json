@@ -1,0 +1,20 @@
+[
+  {
+    "category": "Smartphones",
+    "description": "Latest flagship and budget-friendly smartphones with cutting-edge features.",
+    "image": "images/smartphones.webp",
+    "slug": "smartphones"
+  },
+  {
+    "category": "Laptops",
+    "description": "High-performance laptops for work, gaming, and everyday use.",
+    "image": "images/laptops.webp",
+    "slug": "laptops"
+  },
+  {
+    "category": "Headphones & Earbuds",
+    "description": "Crystal-clear sound and deep bass in premium and budget audio devices.",
+    "image": "images/headphones-collection.webp",
+    "slug": "audio"
+  }
+]

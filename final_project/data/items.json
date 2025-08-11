@@ -1,0 +1,133 @@
+[
+  {
+    "id": 1,
+    "name": "iPhone 15 Pro",
+    "price": 999,
+    "category": "Smartphones",
+    "image": "images/iphone-15-pro.jpg",
+    "featured": true
+  },
+  {
+    "id": 2,
+    "name": "Samsung Galaxy S24",
+    "price": 899,
+    "category": "Smartphones",
+    "image": "images/s24-galaxy.jpg",
+    "featured": true
+  },
+  {
+    "id": 3,
+    "name": "Google Pixel 8 Pro",
+    "price": 799,
+    "category": "Smartphones",
+    "image": "images/google-pixel6.jpg",
+    "featured": false
+  },
+  {
+    "id": 4,
+    "name": "OnePlus 12",
+    "price": 699,
+    "category": "Smartphones",
+    "image": "images/one-plus-12.webp",
+    "featured": false
+  },
+
+  {
+    "id": 5,
+    "name": "MacBook Air M3",
+    "price": 1199,
+    "category": "Laptops",
+    "image": "images/mac-book-air3.jpg",
+    "featured": true
+  },
+  {
+    "id": 6,
+    "name": "Dell XPS 15",
+    "price": 1299,
+    "category": "Laptops",
+    "image": "images/dell.jpg",
+    "featured": false
+  },
+  {
+    "id": 7,
+    "name": "HP Spectre x360",
+    "price": 1099,
+    "category": "Laptops",
+    "image": "images/hp-laptop.jpg",
+    "featured": false
+  },
+  {
+    "id": 8,
+    "name": "ASUS ROG Zephyrus",
+    "price": 1799,
+    "category": "Laptops",
+    "image": "images/Asus-laptop.webp",
+    "featured": false
+  },
+
+  {
+    "id": 9,
+    "name": "Apple Watch Series 9",
+    "price": 399,
+    "category": "Smartwatches",
+    "image": "images/Apple_Watch_Series_9.webp",
+    "featured": true
+  },
+  {
+    "id": 10,
+    "name": "Samsung Galaxy Watch 6",
+    "price": 349,
+    "category": "Smartwatches",
+    "image": "images/samsung-watch.webp",
+    "featured": false
+  },
+  {
+    "id": 11,
+    "name": "Fitbit Sense 2",
+    "price": 299,
+    "category": "Smartwatches",
+    "image": "images/fitbit-watch.jpg",
+    "featured": false
+  },
+
+  {
+    "id": 12,
+    "name": "Sony WH-1000XM5",
+    "price": 399,
+    "category": "Headphones & Earbuds",
+    "image": "images/sony-headphone.webp",
+    "featured": true
+  },
+  {
+    "id": 13,
+    "name": "Bose QuietComfort 45",
+    "price": 329,
+    "category": "Headphones & Earbuds",
+    "image": "images/boseUltra.webp",
+    "featured": false
+  },
+  {
+    "id": 14,
+    "name": "AirPods Pro 2",
+    "price": 249,
+    "category": "Headphones & Earbuds",
+    "image": "images/airpods-pro-2.webp",
+    "featured": false
+  },
+  {
+    "id": 15,
+    "name": "Beats Studio Buds+",
+    "price": 179,
+    "category": "Headphones & Earbuds",
+    "image": "https://images.pexels.com/photos/3394653/pexels-photo-3394653.jpeg?w=500",
+    "featured": false
+  },
+  {
+    "id": 16,
+    "name": "Accentum Ultra Quiet",
+    "price": 100,
+    "category": "Headphones & Earbuds",
+    "image": "images/accentum.webp",
+    "featured": false
+  }
+]
