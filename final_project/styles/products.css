@@ -6,15 +6,12 @@
   --surface: #F8FAFC;
 }
 
-
 body {
   margin: 0;
   font-family: Arial, sans-serif;
   background-color: var(--card-bg);
   color: var(--slate);
 }
-
-
 
 /* Header */
 .site-header {
@@ -52,7 +49,7 @@ body {
 
 /* Nav Links */
 .nav-links {
-  display: none; /* hidden on small screens */
+  display: none; 
 }
 
 .nav-links a {
@@ -68,7 +65,6 @@ body {
 
 /* Active page link */
 .nav-links a.active {
-  /* color: var(--orange); */
   font-weight: 600;
   border-bottom: 2px solid var(--orange);
   padding-bottom: 0.25rem;
@@ -252,8 +248,6 @@ body {
 /* utility */
 .hidden { display: none !important; }
 
-
-
 /* filter */
 .filter-sort {
     display: flex;
@@ -265,7 +259,7 @@ body {
 
 .filter-sort label {
     font-weight: 500;
-    color: #374151; /* Neutral gray */
+    color: #374151; 
 }
 
 .filter-sort select {
@@ -284,7 +278,6 @@ body {
   color: #94a3b8; 
   padding: 2rem 1rem;
   font-size: 0.9rem;
-  margin-bottom: 0;
 }
 
 .footer-container {
@@ -309,7 +302,6 @@ body {
 .footer-logo img {
   height: 50px;
   width: auto;
-  /* filter: brightness(0) saturate(100%) invert(90%) sepia(10%) saturate(150%) hue-rotate(30deg); */
 }
 
 .social-icons {
@@ -322,17 +314,17 @@ body {
   align-items: center;
   justify-content: center;
   transition: transform 0.3s ease;
-  color: #c4b59b; /* muted warm beige */
+  color: #c4b59b; 
 }
 
 .social-icons a svg {
-  fill: currentColor; /* inherit from link color */
+  fill: currentColor; 
 }
 
 .social-icons a:hover,
 .social-icons a:focus {
   transform: scale(1.1);
-  color: #f7b280; /* light muted orange on hover */
+  color: #f7b280; 
   outline: none;
 }
 
@@ -340,13 +332,12 @@ body {
   flex-basis: 100%;
   text-align: center;
   margin-top: 1rem;
-  color: #94a3b8; /* lighter muted gray */
+  color: #94a3b8; 
 }
 
 @media (min-width: 640px) {
   .footer-info {
     flex-basis: auto;
-    margin-top: 0;
     text-align: right;
   }
 }
@@ -369,12 +360,12 @@ body {
   position: absolute;
   top: 70px;
   right: 0;
-  background-color: #ffffff; /* Force solid white */
+  background-color: #ffffff; 
   padding: 1rem;
   box-shadow: 0 4px 10px rgba(0,0,0,0.1);
   width: 200px;
   animation: slideDown 0.3s ease forwards;
-  z-index: 1000; /* Ensure it sits above content */
+  z-index: 1000; 
 }
 
 

@@ -47,7 +47,7 @@ body {
 
 /* Nav Links */
 .nav-links {
-  display: none; /* hidden on small screens */
+  display: none; 
 }
 
 .nav-links a {
@@ -63,12 +63,10 @@ body {
 
 /* Active page link */
 .nav-links a.active {
-  /* color: var(--orange); */
   font-weight: 600;
   border-bottom: 2px solid var(--orange);
   padding-bottom: 0.25rem;
 }
-
 
 /* Hamburger Menu */
 .hamburger {
@@ -86,8 +84,6 @@ body {
 }
 
 
-/* Hero Section */
-/* Default (small screens) */
 .hero {
   position: relative;
   height: 95vh;
@@ -116,7 +112,7 @@ body {
 .hero-overlay {
   position: absolute;
   top: 0; left: 0; right: 0; bottom: 0;
-  background-color: rgba(0, 0, 0, 0.4); /* darken the image */
+  background-color: rgba(0, 0, 0, 0.4); 
 }
 
 .hero-content {
@@ -138,13 +134,14 @@ body {
 
 .cta-btn {
   display: inline-block;
-  background-color: #E27B42;
+  background-color: #A8440A; 
   color: var(--white);
   padding: 0.75rem 1.5rem;
   border-radius: 4px;
   text-decoration: none;
   font-weight: bold;
 }
+
 
 .cta-btn:hover {
   background-color: #ea580c;
@@ -364,8 +361,8 @@ dialog::backdrop {
 
 /* Final cta */
 #final-cta {
-  background-color: #F3F4F6; /* Light Gray - neutral, high readability */
-  color: #1E293B; /* Dark Slate for strong contrast */
+  background-color: #F3F4F6;
+  color: #1E293B; 
   padding: 3rem 1rem;
   text-align: center;
 }
@@ -388,8 +385,8 @@ dialog::backdrop {
 
 .cta-button {
   display: inline-block;
-  background-color: #E27B42; /* Muted brand orange-brown tone */
-  color: #ffffff; /* White text for contrast */
+  background-color: #A8440A;
+  color: var(--white); 
   font-weight: bold;
   padding: 0.75rem 1.5rem;
   border-radius: 8px;
@@ -398,13 +395,12 @@ dialog::backdrop {
 }
 
 .cta-button:hover {
-  background-color: #c86430; /* Darker shade for hover */
+  background-color: #c86430; 
 }
 
-
 #site-footer {
-  background-color: #1E293B; /* Slate Gray - keep as dark neutral */
-  color: #94a3b8; /* Muted gray-blue text for less intensity */
+  background-color: #1E293B;
+  color: #94a3b8;
   padding: 2rem 1rem;
   font-size: 0.9rem;
 }
@@ -425,14 +421,12 @@ dialog::backdrop {
   gap: 0.75rem;
   font-weight: 600;
   font-size: 1.2rem;
-  color: #c4b59b; /* Soft warm beige for subtle branding */
+  color: #c4b59b; 
 }
 
 .footer-logo img {
   height: 50px;
   width: auto;
-  /* filter: brightness(0) saturate(100%) invert(90%) sepia(10%) saturate(150%) hue-rotate(30deg); */
-  /* if your logo is dark, this lightens it subtly */
 }
 
 .social-icons {
@@ -445,17 +439,17 @@ dialog::backdrop {
   align-items: center;
   justify-content: center;
   transition: transform 0.3s ease;
-  color: #c4b59b; /* muted warm beige */
+  color: #c4b59b;
 }
 
 .social-icons a svg {
-  fill: currentColor; /* inherit from link color */
+  fill: currentColor; 
 }
 
 .social-icons a:hover,
 .social-icons a:focus {
   transform: scale(1.1);
-  color: #f7b280; /* light muted orange on hover */
+  color: #f7b280; 
   outline: none;
 }
 
@@ -463,7 +457,7 @@ dialog::backdrop {
   flex-basis: 100%;
   text-align: center;
   margin-top: 1rem;
-  color: #94a3b8; /* lighter muted gray */
+  color: #94a3b8;
 }
 
 @media (min-width: 640px) {
@@ -473,7 +467,6 @@ dialog::backdrop {
     text-align: right;
   }
 }
-
 
 @media (min-width: 768px) {
   .reviews-grid {
@@ -521,12 +514,12 @@ dialog::backdrop {
   position: absolute;
   top: 70px;
   right: 0;
-  background-color: #ffffff; /* Force solid white */
+  background-color: #ffffff; 
   padding: 1rem;
   box-shadow: 0 4px 10px rgba(0,0,0,0.1);
   width: 200px;
   animation: slideDown 0.3s ease forwards;
-  z-index: 1000; /* Ensure it sits above content */
+  z-index: 1000;
 }
 
 @keyframes slideDown {
@@ -556,6 +549,3 @@ dialog::backdrop {
 .hamburger span {
   transition: all 0.3s ease;
 }
-
-
-

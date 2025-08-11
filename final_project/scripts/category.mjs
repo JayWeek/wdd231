@@ -1,6 +1,3 @@
-// categories.js - ES Module using <dialog>
-// exports: loadCategories, openModal, closeModal
-
 export async function loadCategories(jsonPath = '../data/categoryItems.json') {
   try {
     const response = await fetch(jsonPath);

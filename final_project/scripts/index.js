@@ -29,7 +29,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // 'cancel' fires on Esc (default). We let the dialog close naturally.
     modal.addEventListener('cancel', (e) => {
-      // optional cleanup or analytics here
+
     });
   }
 

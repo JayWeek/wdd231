@@ -12,5 +12,3 @@ export function displayFormResults() {
   }
 }
 
-// Auto-run when the module is loaded
-// displayFormResults();

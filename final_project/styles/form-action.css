@@ -1,40 +1,43 @@
 .result-container {
-      max-width: 600px;
-      margin: 2rem auto;
-      background: #ffffff;
-      padding: 2rem;
-      border-radius: 12px;
-      box-shadow: 0 4px 20px rgba(0,0,0,0.05);
-      animation: fadeIn 0.8s ease forwards;
-    }
+  max-width: 600px;
+  margin: 2rem auto;
+  background: #FFFFFF; /* White - already good */
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+  animation: fadeIn 0.8s ease forwards;
+}
+
 .result-container h2 {
-    text-align: center;
-    margin-bottom: 1rem;
+  text-align: center;
+  margin-bottom: 1rem;
+  color: #1E293B; /* Slate Gray - good contrast */
 }
+
 .result-item {
-    margin-bottom: 1rem;
+  margin-bottom: 1rem;
+  color: #334155; /* Darker muted slate for better readability */
 }
+
 .result-item strong {
-    color: #f97316;
+  color: #A8520F; /* Darker orange for AA compliance */
 }
 
 .home-button {
-    display: inline-block;
-    margin-top: 2rem;
-    background-color: #f97316; /* Brand orange */
-    color: #ffffff;
-    padding: 0.75rem 1.5rem;
-    border-radius: 8px;
-    text-decoration: none;
-    transition: background-color 0.3s ease;
+  background-color: #A8520F; /* Darker orange for better contrast */
+  color: #FFFFFF;
+  padding: 0.75rem 1.5rem;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
 }
 
 .home-button:hover {
-    background-color: #ea580c; /* Darker orange for hover */
+  background-color: #873E0C; /* Even darker for hover */
 }
 
 /* Smooth fade in */
 @keyframes fadeIn {
-    from { opacity: 0; transform: translateY(15px); }
-    to { opacity: 1; transform: translateY(0); }
+  from { opacity: 0; transform: translateY(15px); }
+  to { opacity: 1; transform: translateY(0); }
 }
