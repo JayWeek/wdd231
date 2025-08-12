@@ -8,9 +8,6 @@
 
   // const DATA_PATH = './data/items.json'; 
   const DATA_PATH = 'data/items.json';
-
-
-
   const FAVORITES_KEY = 'favorites';
   const RECENT_KEY = 'recentlyViewed';
   const RECENT_LIMIT = 5;
