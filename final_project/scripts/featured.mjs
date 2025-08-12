@@ -8,7 +8,7 @@ export async function loadFeaturedItems() {
 
     featuredGrid.innerHTML = featuredItems.map(item => `
       <div class="featured-item">
-        <img src="${item.image}" alt="${item.name}">
+        <img src="${item.image}" alt="${item.name}" loading="lazy">
         <h3>${item.name}</h3>
         <p>$${item.price}</p>
       </div>
