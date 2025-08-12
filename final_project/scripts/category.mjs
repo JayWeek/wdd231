@@ -1,4 +1,4 @@
-export async function loadCategories(jsonPath = '../data/categoryItems.json') {
+export async function loadCategories(jsonPath = 'data/categoryItems.json') {
   try {
     const response = await fetch(jsonPath);
     if (!response.ok) throw new Error(`HTTP error! Status: ${response.status}`);

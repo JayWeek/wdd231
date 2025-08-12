@@ -1,6 +1,6 @@
 export async function loadFeaturedItems() {
   try {
-    const response = await fetch('../data/items.json');
+    const response = await fetch('data/items.json');
     const items = await response.json();
 
     const featuredItems = items.filter(item => item.featured).slice(0, 3);
