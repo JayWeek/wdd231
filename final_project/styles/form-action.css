@@ -1,7 +1,7 @@
 .result-container {
   max-width: 600px;
   margin: 2rem auto;
-  background: #FFFFFF; /* White - already good */
+  background: #FFFFFF; 
   padding: 2rem;
   border-radius: 12px;
   box-shadow: 0 4px 20px rgba(0,0,0,0.05);
@@ -11,20 +11,20 @@
 .result-container h2 {
   text-align: center;
   margin-bottom: 1rem;
-  color: #1E293B; /* Slate Gray - good contrast */
+  color: #1E293B; 
 }
 
 .result-item {
   margin-bottom: 1rem;
-  color: #334155; /* Darker muted slate for better readability */
+  color: #334155; 
 }
 
 .result-item strong {
-  color: #A8520F; /* Darker orange for AA compliance */
+  color: #A8520F; 
 }
 
 .home-button {
-  background-color: #A8520F; /* Darker orange for better contrast */
+  background-color: #A8520F;
   color: #FFFFFF;
   padding: 0.75rem 1.5rem;
   border-radius: 8px;
@@ -32,9 +32,6 @@
   transition: background-color 0.3s ease;
 }
 
-.home-button:hover {
-  background-color: #873E0C; /* Even darker for hover */
-}
 
 /* Smooth fade in */
 @keyframes fadeIn {

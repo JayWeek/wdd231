@@ -49,6 +49,8 @@ function createCardElement(product, isRecent = false, favorites = []) {
   card.className = isRecent ? 'recent-card' : 'product-card';
   card.tabIndex = 0;
   card.dataset.id = product.id;
+  card.setAttribute('role', 'listitem');
+
 
   // media as background to keep aspect ratio and clean crop
   const media = document.createElement('div');
@@ -86,7 +88,7 @@ function createCardElement(product, isRecent = false, favorites = []) {
   const info = document.createElement('div');
   info.className = 'card-info';
   info.innerHTML = `
-    <h3>${product.name}</h3>
+    <h2>${product.name}</h2>
     <p class="card-meta">${product.category}</p>
     <p class="card-price">$${Number(product.price).toFixed(2)}</p>
   `;

@@ -178,7 +178,7 @@ body {
   flex: 1 1 auto;
 }
 
-.card-info h3 {
+.card-info h2 {
   margin: 0;
   font-size: 1rem;
   color: var(--slate);
