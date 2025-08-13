@@ -224,7 +224,7 @@ dialog.modal {
   box-shadow: 0 8px 20px rgba(0,0,0,0.3);
 }
 
-dialog.modal img {
+.modal-body img {
   display: block;           
   width: 150px;               
   max-width: 100%;           
