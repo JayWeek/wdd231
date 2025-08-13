@@ -8,7 +8,7 @@
 
 body {
   margin: 0;
-  font-family: Arial, sans-serif;
+  font-family: 'Roboto', Arial, sans-serif;
   background-color: var(--card-bg);
   color: var(--slate);
 }
@@ -156,27 +156,17 @@ body {
   outline: none;
 }
 
-/* IMAGE */
-/* .card-media {
-  width: 100%;
-  height: 160px;
-  background-position: center;
-  background-size: cover;
-  flex-shrink: 0;
-} */
-
 .card-media {
-  height: 160px;      /* fixed visual height */
-  overflow: hidden;   /* hide cropped parts */
+  height: 160px;     
+  overflow: hidden;  
 }
 
 .card-media img {
   width: 100%;
   height: 100%;
-  object-fit: cover; /* fills container, maintains ratio, crops excess */
+  object-fit: cover; 
   display: block;
 }
-
 
 /* INFO */
 .card-body {
@@ -364,7 +354,6 @@ body {
     display: none;
   }
 }
-
 
 /* Show nav when toggled on small screens */
 .nav-links.nav-open {
