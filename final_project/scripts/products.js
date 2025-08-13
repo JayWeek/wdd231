@@ -46,83 +46,82 @@
   }
 
   function createCardElement(product, isRecent = false, favorites = []) {
-  const card = document.createElement('article');
-  card.className = isRecent ? 'recent-card' : 'product-card';
-  card.tabIndex = 0;
-  card.dataset.id = product.id;
-  card.setAttribute('role', 'listitem');
+    const card = document.createElement('article');
+    card.className = isRecent ? 'recent-card' : 'product-card';
+    card.tabIndex = 0;
+    card.dataset.id = product.id;
+    card.setAttribute('role', 'listitem');
 
-  // media container
-  const media = document.createElement('div');
-  media.className = 'card-media';
+    // media container
+    const media = document.createElement('div');
+    media.className = 'card-media';
 
-  // product image with lazy loading
-  const img = document.createElement('img');
-  img.src = product.image;
-  img.alt = product.name;
-  img.loading = 'lazy';
-  img.setAttribute('aria-label', product.name);
-  media.appendChild(img);
+    // product image with lazy loading
+    const img = document.createElement('img');
+    img.src = product.image;
+    img.alt = product.name;
+    img.loading = 'lazy';
+    img.setAttribute('aria-label', product.name);
+    media.appendChild(img);
 
-  // favorite button
-  const favBtn = document.createElement('button');
-  favBtn.type = 'button';
-  favBtn.className = 'favorite-btn';
-  favBtn.setAttribute('aria-label', `Save ${product.name} to favorites`);
-  favBtn.setAttribute('data-id', product.id);
+    // favorite button
+    const favBtn = document.createElement('button');
+    favBtn.type = 'button';
+    favBtn.className = 'favorite-btn';
+    favBtn.setAttribute('aria-label', `Save ${product.name} to favorites`);
+    favBtn.setAttribute('data-id', product.id);
 
-  if (favorites.includes(Number(product.id))) {
-    favBtn.classList.add('active');
-    favBtn.setAttribute('aria-pressed', 'true');
-  } else {
-    favBtn.setAttribute('aria-pressed', 'false');
-  }
-
-  favBtn.innerHTML = `
-    <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
-      <path d="M12 21s-7.534-4.873-10-8.07C-0.188 8.94 3.006 4 7.354 4 9.718 4 12 5.77 12 5.77S14.282 4 16.646 4C21.994 4 25.188 8.94 22 12.93 19.533 16.127 12 21 12 21z"/>
-    </svg>
-  `;
-
-  // info section
-  const body = document.createElement('div');
-  body.className = 'card-body';
-
-  const info = document.createElement('div');
-  info.className = 'card-info';
-  info.innerHTML = `
-    <h2>${product.name}</h2>
-    <p class="card-meta">${product.category}</p>
-    <p class="card-price">$${Number(product.price).toFixed(2)}</p>
-  `;
-
-  body.appendChild(info);
-
-  // assemble
-  card.appendChild(media);
-  card.appendChild(favBtn);
-  card.appendChild(body);
-
-  // events
-  favBtn.addEventListener('click', (e) => {
-    e.stopPropagation();
-    toggleFavorite(Number(product.id), favBtn);
-  });
-
-  card.addEventListener('click', () => {
-    addToRecent(product);
-  });
-
-  card.addEventListener('keydown', (e) => {
-    if (e.key === 'Enter' || e.key === ' ') {
-      e.preventDefault();
-      addToRecent(product);
+    if (favorites.includes(Number(product.id))) {
+      favBtn.classList.add('active');
+      favBtn.setAttribute('aria-pressed', 'true');
+    } else {
+      favBtn.setAttribute('aria-pressed', 'false');
     }
-  });
 
-  return card;
-}
+    favBtn.innerHTML = `
+      <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+        <path d="M12 21s-7.534-4.873-10-8.07C-0.188 8.94 3.006 4 7.354 4 9.718 4 12 5.77 12 5.77S14.282 4 16.646 4C21.994 4 25.188 8.94 22 12.93 19.533 16.127 12 21 12 21z"/>
+      </svg>
+    `;
 
+    // info section
+    const body = document.createElement('div');
+    body.className = 'card-body';
+
+    const info = document.createElement('div');
+    info.className = 'card-info';
+    info.innerHTML = `
+      <h2>${product.name}</h2>
+      <p class="card-meta">${product.category}</p>
+      <p class="card-price">$${Number(product.price).toFixed(2)}</p>
+    `;
+
+    body.appendChild(info);
+
+    // assemble
+    card.appendChild(media);
+    card.appendChild(favBtn);
+    card.appendChild(body);
+
+    // events
+    favBtn.addEventListener('click', (e) => {
+      e.stopPropagation();
+      toggleFavorite(Number(product.id), favBtn);
+    });
+
+    card.addEventListener('click', () => {
+      addToRecent(product);
+    });
+
+    card.addEventListener('keydown', (e) => {
+      if (e.key === 'Enter' || e.key === ' ') {
+        e.preventDefault();
+        addToRecent(product);
+      }
+    });
+
+    return card;
+  }
 
   /* state */
   let favorites = loadFavorites();
