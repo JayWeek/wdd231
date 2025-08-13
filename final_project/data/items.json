@@ -61,7 +61,7 @@
     "name": "ASUS ROG Zephyrus",
     "price": 1799,
     "category": "Laptops",
-    "image": "images/Asus-laptop.webp",
+    "image": "images/asus-laptop.webp",
     "featured": false
   },
 
@@ -70,7 +70,7 @@
     "name": "Apple Watch Series 9",
     "price": 399,
     "category": "Smartwatches",
-    "image": "images/Apple_Watch_Series_9.webp",
+    "image": "images/apple_watch_series_9.webp",
     "featured": true
   },
   {
